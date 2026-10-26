@@ -16,7 +16,7 @@
       {
         "key": "fri",
         "label": "Freitag 30.10.",
-        "note": "Ankunft 16:15, nur Abend"
+        "note": "Ankunft 16:15 in T4, Zug nach Chamartín, dann IE Campus"
       },
       {
         "key": "sat",
@@ -118,6 +118,27 @@
         "sat",
         "sun",
         "mon"
+      ],
+      "isClassic": false,
+      "special": false,
+      "uncertain": false,
+      "kind": "card"
+    },
+    {
+      "id": "99-cheesecake",
+      "name": "99Cheesecake",
+      "category": "cafe",
+      "price": 1,
+      "description": "Cheesecake-Stücke ab 0,99 € – süss, günstig und ziemlich viral",
+      "image": "img/cafe_99-cheesecake.webp",
+      "area": "Malasaña",
+      "address": "Calle Don Felipe 4, 28004 Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=99Cheesecake+Calle+Don+Felipe+4+Madrid",
+      "hours": "Di–Fr 15–22, Sa–So 12–20 (Stand 2025, Mo unbekannt)",
+      "bestTime": "afternoon",
+      "days": [
+        "sat",
+        "sun"
       ],
       "isClassic": false,
       "special": false,
@@ -249,6 +270,28 @@
         "fri",
         "sat",
         "sun"
+      ],
+      "isClassic": false,
+      "special": false,
+      "uncertain": false,
+      "kind": "card"
+    },
+    {
+      "id": "brutal",
+      "name": "Brutal Specialty Coffee",
+      "category": "cafe",
+      "price": 2,
+      "description": "Helles Specialty-Café an der Plaza del Ángel: Toast, Açaí-Bowls und Flat White",
+      "image": "img/cafe_brutal.webp",
+      "area": "Centro (Huertas)",
+      "address": "Plaza del Ángel 5, 28012 Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brutal+Specialty+Coffee+Plaza+del+Angel+5+Madrid",
+      "hours": "Mo–Fr 8:30–20, Sa–So 9–20 (Feiertag unklar)",
+      "bestTime": "morning",
+      "days": [
+        "sat",
+        "sun",
+        "mon"
       ],
       "isClassic": false,
       "special": false,
@@ -410,6 +453,28 @@
       "kind": "card"
     },
     {
+      "id": "toma-cafe",
+      "name": "Toma Café",
+      "category": "cafe",
+      "price": 2,
+      "description": "Der Malasaña-Klassiker für Specialty Coffee: Pflanzen, weisse Kacheln, Holzbalken",
+      "image": "img/cafe_toma-cafe.webp",
+      "area": "Malasaña",
+      "address": "Calle de la Palma 49, 28004 Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Toma+Cafe+Calle+de+la+Palma+49+Madrid",
+      "hours": "Mo–Fr 8–20, Sa–So 10–20 (Quellen uneinig)",
+      "bestTime": "morning",
+      "days": [
+        "sat",
+        "sun",
+        "mon"
+      ],
+      "isClassic": false,
+      "special": false,
+      "uncertain": false,
+      "kind": "card"
+    },
+    {
       "id": "tko-tacos",
       "name": "TKO Tacos",
       "category": "essen",
@@ -437,7 +502,7 @@
       "name": "IE Tower & Uni",
       "category": "erlebnis",
       "price": null,
-      "description": "Hier studiert Emil: IE Tower und Uni anschauen, mitten in den Cuatro Torres",
+      "description": "Freitag direkt nach dem Flughafen: Emils Uni im IE Tower anschauen",
       "image": "img/erlebnis_ie-tower.webp",
       "area": "Cuatro Torres / Tetuán",
       "address": "Paseo de la Castellana 259, 28046 Madrid",
@@ -445,9 +510,7 @@
       "hours": "Aussen jederzeit; Innen unbekannt",
       "bestTime": "afternoon",
       "days": [
-        "sat",
-        "sun",
-        "mon"
+        "fri"
       ],
       "isClassic": false,
       "special": false,
@@ -511,6 +574,28 @@
       "bestTime": "lunch",
       "days": [
         "fri",
+        "sat",
+        "sun",
+        "mon"
+      ],
+      "isClassic": false,
+      "special": false,
+      "uncertain": false,
+      "kind": "card"
+    },
+    {
+      "id": "hola-coffee",
+      "name": "Hola Coffee",
+      "category": "cafe",
+      "price": 2,
+      "description": "Hochgelobte Röster-Bar in Lavapiés, europaweit unter den besten Cafés gelistet",
+      "image": "img/cafe_hola-coffee.webp",
+      "area": "Lavapiés",
+      "address": "Calle del Doctor Fourquet 33, 28012 Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hola+Coffee+Calle+Doctor+Fourquet+33+Madrid",
+      "hours": "Mo–Fr 8–18, Sa–So 9–18/20 (Quellen uneinig)",
+      "bestTime": "morning",
+      "days": [
         "sat",
         "sun",
         "mon"
@@ -651,6 +736,28 @@
         "mon"
       ],
       "isClassic": true,
+      "special": false,
+      "uncertain": false,
+      "kind": "card"
+    },
+    {
+      "id": "mision-cafe",
+      "name": "Misión Café",
+      "category": "cafe",
+      "price": 2,
+      "description": "Kleines, helles Café mit Bäckerei und Holzmöbeln – perfekt für Fotos und Flat White",
+      "image": "img/cafe_mision-cafe.webp",
+      "area": "Malasaña / Conde Duque",
+      "address": "Calle de los Reyes 5, 28015 Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mision+Cafe+Calle+de+los+Reyes+5+Madrid",
+      "hours": "Mo–Fr 8–19, Sa–So 10–19 (Quellen uneinig)",
+      "bestTime": "morning",
+      "days": [
+        "sat",
+        "sun",
+        "mon"
+      ],
+      "isClassic": false,
       "special": false,
       "uncertain": false,
       "kind": "card"

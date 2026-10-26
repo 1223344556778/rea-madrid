@@ -40,7 +40,7 @@ a{color:inherit}
 .how.nope{border-color:var(--red)}.how.nope .arrow{color:var(--red)}
 .how.like{border-color:var(--green)}.how.like .arrow{color:var(--green)}
 .how.sup{border-color:var(--sun)}.how.sup .arrow{color:var(--sun)}
-.tickets{display:grid;gap:14px;margin-bottom:28px}
+.tickets{display:grid;gap:14px;margin-bottom:14px}
 .ticket{display:flex;background:var(--cream);color:var(--ink);border-radius:18px;position:relative;box-shadow:0 10px 24px rgba(0,0,0,.28)}
 .ticket:nth-child(1){rotate:-1deg}.ticket:nth-child(2){rotate:.8deg}
 .t-main{flex:1;padding:14px 14px 14px 18px;min-width:0}
@@ -218,3 +218,11 @@ a{color:inherit}
 @media (max-height:700px){
   .name{font-size:27px}.desc{font-size:14px}.rb{width:58px;height:58px}.rb.sup{width:48px;height:48px}
 }
+
+/* anreise */
+.route{background:var(--sun);color:var(--terra-d);border-radius:18px;padding:14px 18px;margin:4px 0 22px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.route summary{font:800 18px var(--f-display);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.route summary::-webkit-details-marker{display:none}
+.route summary::after{content:"▾";font-size:16px;transition:transform .2s}
+.route[open] summary::after{transform:rotate(180deg)}
+.route ol{margin:12px 0 2px 20px;display:grid;gap:8px;font-size:15px;line-height:1.4;color:var(--ink)}

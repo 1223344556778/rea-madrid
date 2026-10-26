@@ -18,7 +18,7 @@ const STUDY_LABELS = ['Ferien-Modus 😎', 'Eine Stunde Gewissen', 'Kurz und sch
 const MILESTONES = [[0.25, 'Ein Viertel geschafft 💪'], [0.5, 'Halbzeit! 🔥'], [0.75, 'Fast da, noch ein paar!']];
 const SLOT_ORDER = { morning: 0, lunch: 1, afternoon: 2, sunset: 3, evening: 4 };
 const SLOT_LABEL = { morning: 'Morgens', lunch: 'Mittags', afternoon: 'Nachmittags', sunset: 'Sonnen&shy;untergang', evening: 'Abends', any: 'Flexibel' };
-const CAP = { fri: 2, sat: 5, sun: 5, mon: 5, tue: 1 };
+const CAP = { fri: 3, sat: 5, sun: 5, mon: 5, tue: 1 };
 const CITY = { GVA: 'Genf', MAD: 'Madrid', ZRH: 'Zürich' };
 
 const $ = s => document.querySelector(s);
@@ -434,6 +434,7 @@ function allowed(item, dk) {
   const days = item.days || [];
   if (days.length && !days.includes(dk)) return false;
   const bt = item.bestTime || 'any';
+  if (days.length === 1 && days[0] === dk) return true; // fest eingeplant, z. B. IE Campus am Freitag
   if (dk === 'fri') return ['evening', 'sunset', 'any'].includes(bt) && item.category !== 'shopping';
   if (dk === 'tue') return (item.category === 'cafe' || item.category === 'essen') && ['morning', 'any'].includes(bt);
   return true;
