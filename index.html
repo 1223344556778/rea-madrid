@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F2557F">
+<title>Madrid Swipe</title>
+<meta name="description" content="Swipe dich durch Madrid: Fr 30.10. bis Di 3.11.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hab was für dich vorbereitet ✈️">
+<meta property="og:description" content="Swipe dich durch Madrid: Restaurants, Cafés, Läden, Erlebnisse.">
+<meta property="og:image" content="https://1223344556778.github.io/rea-madrid/img/og.jpg">
+<meta property="og:url" content="https://1223344556778.github.io/rea-madrid/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☀️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <section id="start" class="screen active">
+    <div class="start-inner">
+      <div class="pill">Madrid · 30.10. bis 3.11.</div>
+      <h1 class="hero">Hey Rea,<br>ich hab was <em>für dich</em> vorbereitet.</h1>
+      <p class="lead">Swipe dich durch Restaurants, Cafés, Läden und Erlebnisse. Danach baue ich dir daraus einen Plan.</p>
+      <div class="howto">
+        <div class="how nope"><span class="arrow">←</span><b>Nein</b></div>
+        <div class="how like"><span class="arrow">→</span><b>Ja</b></div>
+        <div class="how sup"><span class="arrow">↑</span><b>Unbedingt</b></div>
+      </div>
+      <div id="tickets" class="tickets"></div>
+      <div id="start-error" class="start-error" hidden></div>
+      <button id="go" class="btn primary big" disabled>Los geht's</button>
+      <button id="restart-start" class="linkbtn" hidden>Von vorne anfangen</button>
+    </div>
+  </section>
+
+  <section id="swipe" class="screen">
+    <header class="topbar">
+      <div class="prog"><div class="prog-bar"><i id="bar"></i></div><span id="prog-txt">0/0</span></div>
+      <div class="score" id="score"><span class="sun"></span><b id="pts">0</b></div>
+    </header>
+    <div class="deck" id="deck"></div>
+    <div class="actions" id="actions">
+      <button class="rb undo" id="b-undo" aria-label="Rückgängig" title="Rückgängig">↩︎</button>
+      <button class="rb rate nope" id="b-nope" aria-label="Nein">❌</button>
+      <button class="rb rate sup" id="b-super" aria-label="Unbedingt">⭐</button>
+      <button class="rb rate like" id="b-like" aria-label="Ja">❤️</button>
+    </div>
+  </section>
+
+  <section id="end" class="screen"></section>
+</div>
+
+<canvas id="confetti"></canvas>
+<div id="fx"></div>
+<div id="toast"></div>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-box">
+    <h2 class="big">nicht superlike???</h2>
+    <p>🐶</p>
+    <button class="btn primary big" id="m-super">Doch, Superlike ⭐</button>
+    <button class="btn ghost" id="m-like">Nein, nur Like</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

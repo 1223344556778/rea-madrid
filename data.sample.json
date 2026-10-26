@@ -1,0 +1,52 @@
+{
+  "trip": {
+    "arrival":   { "date": "2026-10-30", "flight": "Iberia", "route": "GVA–MAD", "time": "14:10–16:15" },
+    "departure": { "date": "2026-11-03", "flight": "Iberia", "route": "MAD–ZRH", "time": "11:15–13:35" },
+    "days": [
+      { "key": "fri", "label": "Freitag 30.10.", "note": "Ankunft 16:15, nur Abend" },
+      { "key": "sat", "label": "Samstag 31.10.", "note": "" },
+      { "key": "sun", "label": "Sonntag 1.11.",  "note": "Rastro nur heute" },
+      { "key": "mon", "label": "Montag 2.11.",   "note": "Feiertag in Madrid, Shopping-Tag, früh los" },
+      { "key": "tue", "label": "Dienstag 3.11.", "note": "Abflug 11:15, nur Frühstück" }
+    ]
+  },
+  "items": [
+    { "id": "mama-dumpling", "name": "Mama Dumpling", "category": "essen", "price": 1,
+      "description": "Handgemachte Dumplings in Malasaña. Laut, eng, super.",
+      "image": "https://picsum.photos/seed/dumpling/800/1200", "area": "Malasaña",
+      "address": "Calle de Corredera Alta de San Pablo 3, Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mama+Dumpling+Madrid",
+      "hours": "Mo–So 13–23", "bestTime": "evening", "days": ["fri","sat","sun","mon"],
+      "isClassic": false, "special": false, "uncertain": false },
+    { "id": "cafe-comercial", "name": "Café Comercial", "category": "cafe", "price": 2,
+      "description": "Das älteste Café der Stadt. Cortado und Zeitung inklusive.",
+      "image": "https://picsum.photos/seed/cafe/800/1200", "area": "Chamberí",
+      "address": "Glorieta de Bilbao 7, Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe+Comercial+Madrid",
+      "hours": "Mo–So 8–24", "bestTime": "morning", "days": ["sat","sun","mon","tue"],
+      "isClassic": true, "special": false, "uncertain": false },
+    { "id": "lernen", "kind": "slider", "name": "Rea muss lernen 📚", "category": "erlebnis", "price": null,
+      "description": "Wie viele Stunden musst du lernen?",
+      "image": "https://picsum.photos/seed/study/800/600", "min": 0, "max": 8, "step": 1, "unit": "Std.",
+      "days": [], "bestTime": "any", "special": false },
+    { "id": "retiro-sunset", "name": "Retiro bei Sonnenuntergang", "category": "erlebnis", "price": null,
+      "description": "Ruderboote, Palacio de Cristal, goldenes Licht.",
+      "image": "https://picsum.photos/seed/retiro/800/1200", "area": "Retiro",
+      "address": "Plaza de la Independencia 7, Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid",
+      "hours": "täglich 6–22", "bestTime": "sunset", "days": ["fri","sat","sun","mon"],
+      "isClassic": true, "special": false, "uncertain": false },
+    { "id": "el-rastro", "name": "El Rastro", "category": "shopping", "price": 1,
+      "description": "Der grosse Flohmarkt. Nur sonntags, früh hingehen.",
+      "image": "https://picsum.photos/seed/rastro/800/1200", "area": "La Latina",
+      "address": "Calle de la Ribera de Curtidores, Madrid",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El+Rastro+Madrid",
+      "hours": "So 9–15", "bestTime": "morning", "days": ["sun"],
+      "isClassic": true, "special": false, "uncertain": false },
+    { "id": "andere-shops", "kind": "input", "name": "Andere Läden, die du sehen willst?", "category": "shopping", "price": null,
+      "description": "Schreib rein, was dir einfällt.", "placeholder": "z. B. Zara Gran Vía",
+      "image": null, "days": [], "bestTime": "any", "special": false },
+    { "id": "hund", "name": "🐶", "category": "special", "price": null, "description": null,
+      "image": null, "special": true, "days": [], "bestTime": "any" }
+  ]
+}
